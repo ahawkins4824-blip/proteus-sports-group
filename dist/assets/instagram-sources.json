@@ -1,0 +1,64 @@
+[
+  {
+    "file": "ig-hiring.webp",
+    "source_image_url": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/1770086920753-TX560PR2S8ZGXCF12GIU/image-asset.jpeg?format=750w",
+    "source_permalink": "https://www.instagram.com/p/DUR0wjViSjG/",
+    "dimensions": [
+      750,
+      999
+    ],
+    "bytes": 41558,
+    "edits": [
+      "WebP compression only"
+    ]
+  },
+  {
+    "file": "ig-team-day.webp",
+    "source_image_url": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/1764713703159-OX582X5R7IHS52CH0AV7/image-asset.jpeg?format=750w",
+    "source_permalink": "https://www.instagram.com/p/DP2NqU4k4BK/",
+    "dimensions": [
+      750,
+      1000
+    ],
+    "bytes": 97062,
+    "edits": [
+      "WebP compression only"
+    ]
+  },
+  {
+    "file": "ig-claudia-alex.webp",
+    "source_image_url": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/1764713703967-ED1L45G9YN3195777S7A/image-asset.jpeg?format=750w",
+    "source_permalink": "https://www.instagram.com/p/DPkJmvYExJB/",
+    "dimensions": [
+      750,
+      750
+    ],
+    "bytes": 60116,
+    "edits": [
+      "WebP compression only"
+    ]
+  },
+  {
+    "file": "ig-tom-caleb.webp",
+    "source_image_url": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/1764713705770-UJ7G8XNY5T4Z5CHMK7RL/image-asset.jpeg?format=750w",
+    "source_permalink": "https://www.instagram.com/p/DMeu8RvpWD_/",
+    "dimensions": [
+      750,
+      750
+    ],
+    "bytes": 45110,
+    "edits": [
+      "WebP compression only"
+    ]
+  },
+  {
+    "file": "training.webp",
+    "source_permalink": "https://www.instagram.com/p/DPPnMvgk--7/",
+    "note": "Existing approved company Instagram graphic reused."
+  },
+  {
+    "file": "coaches.webp",
+    "source_permalink": "https://www.instagram.com/p/DKtZIb4pvYF/",
+    "note": "Existing approved company Instagram graphic reused."
+  }
+]

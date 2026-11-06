@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /approved-v1/
+Disallow: /approved-v2/
+Disallow: /approved-v3/
+
+Sitemap: https://ahawkins4824-blip.github.io/proteus-sports-group/sitemap.xml

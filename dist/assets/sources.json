@@ -1,0 +1,110 @@
+[
+  {
+    "name": "logo",
+    "source": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/1749166907775-AZE0N1I42OH9H6NXUROK/proteus-long-SG.png?format=1500w",
+    "bytes": 26948,
+    "file": "logo.png",
+    "width": 1441,
+    "height": 434,
+    "note": "Official Proteus Sports Group logo, transparent background."
+  },
+  {
+    "name": "team",
+    "source": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/b1fcccb8-9923-4861-acfa-0c29bf1b68ef/IMG_3757.jpg?format=1500w",
+    "bytes": 294063,
+    "file": "team.jpg",
+    "width": 1500,
+    "height": 1000,
+    "note": "Coaches posed beside branded Proteus vehicle on a football field.",
+    "optimized_file": "team.webp",
+    "optimized_bytes": 226832
+  },
+  {
+    "name": "early-years",
+    "source": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/1749166902085-TNVWISU8CCWQJ24FA228/proteus-preschool.jpg?format=1500w",
+    "bytes": 446303,
+    "file": "early-years.jpg",
+    "width": 1500,
+    "height": 1000,
+    "note": "Preschool-aged child kicking football on grass; strongest action photograph in this set.",
+    "optimized_file": "early-years.webp",
+    "optimized_bytes": 429440
+  },
+  {
+    "name": "school",
+    "source": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/1749166902088-Z7IUF3IP9ZD1V0OALGG4/proteus-schools.jpg?format=1500w",
+    "bytes": 255125,
+    "file": "school.jpg",
+    "width": 1284,
+    "height": 942,
+    "note": "Teenage football team and coaches posed on school pitch.",
+    "optimized_file": "school.webp",
+    "optimized_bytes": 250542
+  },
+  {
+    "name": "development",
+    "source": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/7c5e7972-ba17-44c8-8d79-4027bd02ff9e/att.8zjF2arUk7YbI5Z815uKyCBZ9j_cm8m-lmfjt2O4jlQ.JPG?format=1500w",
+    "bytes": 430590,
+    "file": "development.jpg",
+    "width": 1500,
+    "height": 1125,
+    "note": "Young football players and two coaches posed beside a goal.",
+    "optimized_file": "development.webp",
+    "optimized_bytes": 392134
+  },
+  {
+    "name": "community",
+    "source": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/1749166902095-N3FOV1UVDZBNXUXGL9US/proteus-community.jpg?format=1500w",
+    "bytes": 280892,
+    "file": "community.jpg",
+    "width": 1284,
+    "height": 920,
+    "note": "Young child choosing sports shoes from a communal equipment container.",
+    "optimized_file": "community.webp",
+    "optimized_bytes": 290600
+  },
+  {
+    "name": "training",
+    "source": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/1764713704745-Q8RUJC4KONYPHUNRDP7Y/image-asset.jpeg?format=1500w",
+    "bytes": 235723,
+    "file": "training.jpg",
+    "width": 1350,
+    "height": 1688,
+    "note": "Graphic poster with large baked-in text for 1:1 training; avoid as raw photography.",
+    "optimized_file": "training.webp",
+    "optimized_bytes": 167894
+  },
+  {
+    "name": "coaches",
+    "source": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/1764713709469-OL6FYFVJ7U5YWVMIQLHX/image-asset.jpeg?format=1500w",
+    "bytes": 114726,
+    "file": "coaches.jpg",
+    "width": 1080,
+    "height": 1080,
+    "note": "Graphic poster with coach Ollie portrait and baked-in biography; avoid as raw photography.",
+    "optimized_file": "coaches.webp",
+    "optimized_bytes": 65762
+  },
+  {
+    "name": "beach",
+    "source": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/1764713710946-MR27OUMIL0EQV5GFYC9C/image-asset.jpeg?format=1500w",
+    "bytes": 318466,
+    "file": "beach.jpg",
+    "width": 1440,
+    "height": 1343,
+    "note": "Proteus flag outside community/surf club building; no beach action visible.",
+    "optimized_file": "beach.webp",
+    "optimized_bytes": 204130
+  },
+  {
+    "name": "holiday",
+    "source": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/1764713712583-EYA5XPO0QBB2WDLK7M55/image-asset.jpeg?format=1500w",
+    "bytes": 452898,
+    "file": "holiday.jpg",
+    "width": 1440,
+    "height": 1080,
+    "note": "Primary-school football group and coaches, with small embedded BDO/Proteus logos.",
+    "optimized_file": "holiday.webp",
+    "optimized_bytes": 417818
+  }
+]

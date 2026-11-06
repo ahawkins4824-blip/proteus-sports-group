@@ -1,0 +1,48 @@
+[
+  {
+    "file": "individual-coaching.webp",
+    "purpose": "Individual & Performance Coaching homepage programme card: authentic one-to-one coaching interaction.",
+    "source_page": "https://www.proteus.nz/football-11",
+    "source_image_url": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/278c1a67-5177-45ea-9af0-87c1fd5670e2/IMG_4891.jpg",
+    "source_dimensions": [
+      1320,
+      2296
+    ],
+    "crop_coordinates_left_top_right_bottom": [
+      0,
+      1040,
+      1320,
+      1920
+    ],
+    "optimized_dimensions": [
+      1320,
+      880
+    ],
+    "optimized_bytes": 106434,
+    "edits": [
+      "Cropped excess sky, Instagram interface and title from existing official reel screenshot",
+      "WebP compression",
+      "No generated people or compositing"
+    ]
+  },
+  {
+    "file": "academy-2027.webp",
+    "purpose": "Proteus Academy programme card: complete official 2027 Academy expressions of interest graphic.",
+    "source_page": "https://www.proteus.nz/academy",
+    "source_image_url": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/4fca7418-190a-4358-b40c-1155b9536bbd/Proteus_Academy_2027_Instagram_v9.png",
+    "source_dimensions": [
+      1080,
+      1350
+    ],
+    "crop_coordinates_left_top_right_bottom": null,
+    "optimized_dimensions": [
+      1080,
+      1350
+    ],
+    "optimized_bytes": 132772,
+    "edits": [
+      "WebP compression only",
+      "Complete official graphic retained without cropping"
+    ]
+  }
+]

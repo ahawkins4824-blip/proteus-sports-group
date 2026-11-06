@@ -1,0 +1,16 @@
+[
+  {
+    "file": "headline.woff2",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/barlowcondensed/BarlowCondensed-Bold.ttf",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/barlowcondensed/OFL.txt",
+    "bytes": 39436,
+    "weight": "700"
+  },
+  {
+    "file": "body.woff2",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/Manrope%5Bwght%5D.ttf",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/OFL.txt",
+    "bytes": 53788,
+    "weight": "200 800"
+  }
+]

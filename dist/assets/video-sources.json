@@ -1,0 +1,112 @@
+{
+  "source_permalink": "https://www.instagram.com/proteussportsgroup/reel/DayuD8hTQ_A/",
+  "source_description": "Proteus Sports Group Papanui Redwood football holiday programme, published company Instagram reel.",
+  "source_resolution": "1080x1920 partial source (first 48 seconds) and full 540x960 source from browser-observed video variants.",
+  "copyright_note": "Company footage used with user authorization. Original Instagram soundtrack omitted.",
+  "outputs": [
+    {
+      "file": "proteus-motion.mp4",
+      "description": "Three distinct football action sequences from the Proteus camp reel",
+      "duration_seconds": 12,
+      "dimensions": [
+        720,
+        1280
+      ],
+      "edits": [
+        "three four-second action segments with simple cuts",
+        "scaled",
+        "25 fps",
+        "H.264 compression",
+        "all audio removed"
+      ],
+      "recommended_object_position": "50% 60%",
+      "source_segments_seconds": [
+        [
+          18,
+          22
+        ],
+        [
+          36,
+          40
+        ],
+        [
+          55,
+          59
+        ]
+      ]
+    },
+    {
+      "file": "proteus-camp-film.mp4",
+      "description": "Silent camp action film; introductory talking-head interview removed",
+      "duration_seconds": 56.5,
+      "dimensions": [
+        540,
+        960
+      ],
+      "edits": [
+        "introductory talking-head interview removed",
+        "trimmed to source 11.5\u201368 seconds",
+        "25 fps",
+        "H.264 compression",
+        "all audio removed"
+      ],
+      "source_start_seconds": 11.5
+    },
+    {
+      "file": "motion-poster.webp",
+      "description": "Young players moving with the ball at camp",
+      "source_seconds": 38.2,
+      "dimensions": [
+        720,
+        1280
+      ],
+      "edits": [
+        "single frame extraction",
+        "resize",
+        "WebP compression"
+      ]
+    },
+    {
+      "file": "action-1.webp",
+      "description": "Players running into space during a camp football game",
+      "source_seconds": 20.5,
+      "dimensions": [
+        1080,
+        810
+      ],
+      "edits": [
+        "single frame extraction",
+        "landscape crop removes excess sky and embedded subtitle area",
+        "WebP compression"
+      ]
+    },
+    {
+      "file": "action-2.webp",
+      "description": "Two young players competing for possession during a camp football game",
+      "source_seconds": 38.2,
+      "dimensions": [
+        1080,
+        810
+      ],
+      "edits": [
+        "single frame extraction",
+        "landscape crop removes excess sky and embedded subtitle area",
+        "WebP compression"
+      ]
+    },
+    {
+      "file": "action-3.webp",
+      "description": "Young goalkeeper in front of the goal at football camp",
+      "source_seconds": 36.4,
+      "dimensions": [
+        1080,
+        810
+      ],
+      "edits": [
+        "single frame extraction",
+        "landscape crop removes excess sky and embedded subtitle area",
+        "WebP compression"
+      ]
+    }
+  ]
+}

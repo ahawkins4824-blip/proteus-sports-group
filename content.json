@@ -1,0 +1,155 @@
+{
+  "programmes": [
+    {
+      "slug": "individual-performance-coaching",
+      "title": "Individual & Performance Coaching",
+      "eyebrow": "Your goals. Your development.",
+      "intro": "Focused coaching for players who want to put extra time into their game. Develop your skills, build confidence and work towards your goals with support that fits your stage of development.",
+      "audience": "Players looking for individual attention or small-group development alongside their school or club sport.",
+      "features": [
+        { "title": "Personal attention", "text": "Football 1:1 sessions focus on your individual skills and understanding of the game." },
+        { "title": "Purposeful practice", "text": "Work on technical skills and game-specific challenges, with feedback to help you keep improving." },
+        { "title": "Small-group development", "text": "Train with other motivated players in a supportive coaching environment. Enquire about the right option for your sport." }
+      ],
+      "email": "patrick@proteus.nz",
+      "cta": "Discuss your development"
+    },
+    {
+      "slug": "academy",
+      "title": "Proteus Academy",
+      "eyebrow": "2027 intake · Expressions of interest open",
+      "intro": "For ambitious young football and basketball players who are ready to work hard, learn and keep developing. A structured programme that supports your journey alongside your existing school and club environment.",
+      "audience": "Young football and basketball athletes with the ambition to develop and the commitment to put in the work.",
+      "features": [
+        { "title": "Develop the whole athlete", "text": "A programme bringing together technical development, athletic performance, performance psychology and athlete education." },
+        { "title": "A plan for your progress", "text": "Small-group development, individual planning and regular feedback help you understand what to work on next." },
+        { "title": "Support along the way", "text": "Coaching and ongoing guidance that work alongside your school and club commitments." }
+      ],
+      "email": "oliver@proteus.nz",
+      "cta": "Express your interest",
+      "contacts": [
+        { "label": "Football", "email": "oliver@proteus.nz" },
+        { "label": "Basketball", "email": "isaac@proteus.nz" }
+      ],
+      "enquiryGuidance": "Tell us your name and age, sport, school, and current team or club. Our team will be in touch to discuss your journey and the next steps."
+    },
+    {
+      "slug": "early-years-fundamentals",
+      "title": "Early Years & Fundamentals",
+      "eyebrow": "Small steps. A love of movement.",
+      "intro": "Give young children a positive start in sport through play. Our preschool First Kicks sessions combine movement basics, ball skills and fun games to make being active an enjoyable part of their day.",
+      "audience": "Preschools, early childhood centres and educators looking to introduce active learning through sport.",
+      "features": [
+        { "title": "Learn through play", "text": "Fun games and activities introduce movement in an encouraging preschool environment." },
+        { "title": "Build the basics", "text": "Children practise fundamental motor skills and ball handling as they explore what they can do." },
+        { "title": "A positive first experience", "text": "Our coaches focus on enjoyment, participation and healthy physical activity." }
+      ],
+      "email": "info@proteus.nz",
+      "cta": "Bring Proteus to your centre"
+    },
+    {
+      "slug": "school-sports-coaching",
+      "title": "School Sports & Coaching",
+      "eyebrow": "More participation. More possibility.",
+      "intro": "Make it easier to give students a great sporting experience. We work with schools to deliver coaching, activities and team support that fit their needs and encourage more young people to get involved.",
+      "audience": "Primary and intermediate schools, secondary schools and colleges, PE departments and school sports coordinators.",
+      "features": [
+        { "title": "Sport within the school day", "text": "Football, futsal and recreational activities help students develop skills, teamwork and confidence." },
+        { "title": "Support for school teams", "text": "Coaching support for trials, training and team development, shaped around your school's requirements." },
+        { "title": "Make room for everyone", "text": "Have-a-go activities, multi-sport festivals and student leadership opportunities encourage wider participation." }
+      ],
+      "email": "patrick@proteus.nz",
+      "cta": "Plan your school's programme"
+    },
+    {
+      "slug": "holiday-programmes",
+      "title": "Holiday Programmes",
+      "eyebrow": "Keep moving over the holidays",
+      "intro": "Active days filled with sport, games and opportunities to learn. Our holiday programmes bring young people together to develop skills, enjoy being active and make connections through sport.",
+      "audience": "Families looking for active school holiday options, and clubs or organisations interested in hosting a programme.",
+      "features": [
+        { "title": "Skills and plenty of play", "text": "Coaching activities, games and challenges make learning part of the fun." },
+        { "title": "Teamwork and connection", "text": "A chance to meet others, work together and enjoy a shared sporting experience." },
+        { "title": "Local programmes", "text": "We deliver programmes with sports partners. Contact us for upcoming locations, dates and registration information." }
+      ],
+      "email": "oliver@proteus.nz",
+      "cta": "Ask about upcoming programmes"
+    },
+    {
+      "slug": "coach-development",
+      "title": "Coach Development",
+      "eyebrow": "Better support for the people who coach",
+      "intro": "Keep learning, share ideas and grow your coaching practice. We create opportunities for coaches to develop through practical experience, workshops and connection with the wider coaching community.",
+      "audience": "New and developing coaches, school and club coaches, and organisations looking to support their coaching teams.",
+      "features": [
+        { "title": "Practical learning", "text": "Hands-on coaching opportunities help developing coaches build experience and confidence." },
+        { "title": "Workshops and new perspectives", "text": "Coach development sessions explore ways to create positive experiences and better support young athletes." },
+        { "title": "A coaching community", "text": "Connect with other coaches, exchange ideas and keep developing your approach." }
+      ],
+      "email": "oliver@proteus.nz",
+      "cta": "Talk coach development"
+    }
+  ],
+  "team": [
+    {
+      "name": "Oliver Hawkins",
+      "role": "Owner & Director",
+      "text": "Leading Proteus Sports Group and supporting opportunities for athletes, coaches, schools and clubs.",
+      "email": "oliver@proteus.nz"
+    },
+    {
+      "name": "Paddy Rousse",
+      "role": "Chief of Operations",
+      "text": "Supporting client relationships, scheduling and the coaching team, with a hands-on role on the pitch.",
+      "email": "patrick@proteus.nz"
+    },
+    {
+      "name": "Josh McTurk",
+      "role": "Lead Manager · Preschool Programme",
+      "text": "Leading Proteus's preschool programme and helping young children enjoy their first experiences of sport."
+    },
+    {
+      "name": "Isaac Rockell",
+      "role": "Lead Basketball & Business Development Manager",
+      "text": "Leading basketball coaching for schools and helping create opportunities across Proteus's coaching pathways.",
+      "email": "isaac@proteus.nz"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Which programme is right for us?",
+      "answer": "Tell us who the programme is for, your sport and what you want to achieve. Our team can discuss the options for an individual player, school, preschool, club or community organisation."
+    },
+    {
+      "question": "Do you offer more than football?",
+      "answer": "Yes. Proteus works across a range of sports and activities, including basketball. Get in touch with your sport and the type of coaching you need so we can discuss a suitable option."
+    },
+    {
+      "question": "How do I express interest in the 2027 Academy?",
+      "answer": "Email oliver@proteus.nz for football or isaac@proteus.nz for basketball. Include your name and age, sport, school, and current team or club. The team will be in touch to discuss the next steps."
+    },
+    {
+      "question": "Where can I find holiday dates and registration details?",
+      "answer": "Contact oliver@proteus.nz for upcoming holiday programmes, locations and registration information. Programme details vary, so check the information for the specific camp before booking."
+    },
+    {
+      "question": "How can our school or club work with Proteus?",
+      "answer": "Contact patrick@proteus.nz with your organisation, the sport or activity, the group you want to support and your goals. We can discuss coaching and programme options that fit your needs."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.proteus.nz/football-11", "supports": ["individual football skills", "understanding of the game", "personalised coaching"] },
+    { "url": "https://www.proteus.nz/preschool", "supports": ["First Kicks", "preschool motor skills", "ball handling", "movement games"] },
+    { "url": "https://www.proteus.nz/schools-sports", "supports": ["school coaching", "football and futsal", "school teams", "have-a-go activities", "multi-sport festivals", "student leadership"] },
+    { "url": "https://www.proteus.nz/holiday-programmes", "supports": ["holiday programmes", "physical activity", "teamwork", "skill development", "multiple sports", "Oliver contact"] },
+    { "url": "https://www.proteus.nz/about", "supports": ["business email contacts", "Oliver Hawkins director", "Isaac Rockell basketball role"] },
+    { "url": "https://www.instagram.com/proteussportsgroup/p/DcfiYxZJDXP/", "supports": ["2027 Academy", "football and basketball", "expressions of interest", "development pillars", "small groups", "individual planning", "feedback", "academy contact instructions"] },
+    { "url": "https://www.instagram.com/proteussportsgroup/p/Dd5-nsytThz/", "supports": ["Paddy Rousse name", "Chief of Operations", "client relationships", "scheduling", "coaching team support"] },
+    { "url": "https://www.instagram.com/proteussportsgroup/p/DdQhglVCVGb/", "supports": ["Josh McTurk", "preschool lead manager"] },
+    { "url": "https://www.instagram.com/proteussportsgroup/p/Db9-C72iaLs/", "supports": ["Isaac Rockell", "basketball leadership", "school coaching", "coaching pathways"] },
+    { "url": "https://www.instagram.com/proteussportsgroup/reel/DbZ-yjXp1y7/", "supports": ["coach development", "practical coaching opportunities"] },
+    { "url": "https://www.instagram.com/proteussportsgroup/p/DZbtKHfidMu/", "supports": ["coach workshops", "mental skills learning", "supporting young athletes"] },
+    { "url": "https://www.instagram.com/proteussportsgroup/p/DPPnMvgk--7/", "supports": ["technical skills", "feedback", "game-specific training", "Patrick contact"] },
+    { "url": "https://www.instagram.com/proteussportsgroup/p/DfEIVpICT0F/", "supports": ["small-group training", "athlete development"] }
+  ]
+}
