@@ -6,6 +6,7 @@ from pathlib import Path
 from urllib.parse import quote
 from xml.sax.saxutils import escape as xml_escape
 from home_v2 import render_home
+from icons import icon
 
 ROOT = Path(__file__).parent
 OUT = ROOT / 'dist'
@@ -13,7 +14,7 @@ DATA = json.loads((ROOT / 'content.json').read_text())
 ORIGIN = 'https://ahawkins4824-blip.github.io/proteus-sports-group'
 LEGACY_ORIGIN = 'https://proteus-sports.squarespace.com'
 PUBLIC_ROUTES = []
-ARROW = '<span aria-hidden="true">↗</span>'
+ARROW = f'<span class="icon-wrap" aria-hidden="true">{icon("arrow-up-right")}</span>'
 IMAGES = {
  'individual-performance-coaching': 'development', 'academy': 'school',
  'early-years-fundamentals': 'early-years', 'school-sports-coaching': 'school',
@@ -54,7 +55,7 @@ def layout(title, desc, body, active='', route='/', indexable=True):
 
 def faq(limit=None):
     items = DATA['faq'][:limit]
-    return '<div class="faq-list">'+''.join(f'<details><summary>{esc(x["question"])}<span aria-hidden="true">+</span></summary><p>{esc(x["answer"])}</p></details>' for x in items)+'</div>'
+    return '<div class="faq-list">'+''.join(f'<details><summary>{esc(x["question"])}<span class="faq-icon" aria-hidden="true">{icon("plus")}</span></summary><p>{esc(x["answer"])}</p></details>' for x in items)+'</div>'
 
 def cards():
     result=[]
@@ -65,7 +66,7 @@ def cards():
         audience='players' if i in [0,1,4] else 'schools' if i in [2,3] else 'coaches'
         if i==0: audience+=' schools'
         if i==4: audience+=' schools'
-        result.append(f'''<article class="programme-card {'academy-card' if i==1 else ''}" data-programme-card data-audience="{audience}"><a href="/{slug}/" class="card-link"><div class="card-image">{image(IMAGES[slug])}<span class="card-number">0{n}</span><span class="card-arrow" aria-hidden="true">↗</span>{'<span class="card-tag">2027 INTAKE</span>' if i==1 else ''}</div><div class="card-body"><h3>{esc(title)}</h3><p>{esc(caption)}</p></div></a></article>''')
+        result.append(f'''<article class="programme-card {'academy-card' if i==1 else ''}" data-programme-card data-audience="{audience}"><a href="/{slug}/" class="card-link"><div class="card-image">{image(IMAGES[slug])}<span class="card-number">0{n}</span><span class="card-arrow" aria-hidden="true">{icon("arrow-up-right")}</span>{'<span class="card-tag">2027 INTAKE</span>' if i==1 else ''}</div><div class="card-body"><h3>{esc(title)}</h3><p>{esc(caption)}</p></div></a></article>''')
     return ''.join(result)
 
 def cta(title='Your next chapter<br>starts with a conversation.',text='A player with a goal? A school with a plan? Let’s make it happen together.'):
@@ -81,7 +82,7 @@ def programme(p):
         contacts='<div class="academy-contacts">'+''.join(f'<a href="/contact/?interest={quote("Academy — "+c["label"].lower())}"><span>{esc(c["label"])}</span><h3>Express your interest {ARROW}</h3><p>{esc(c["email"])}</p></a>' for c in p['contacts'])+'</div>'
         extra=f'<section class="section"><div class="container"><p class="eyebrow">TAKE THE FIRST STEP</p><h2>YOUR JOURNEY.<br><span class="text-purple">LET’S TALK.</span></h2><p class="measure">{esc(p["enquiryGuidance"])}</p>{contacts}</div></section>'
     else: extra=''
-    return f'''<section class="detail-hero"><div class="detail-copy"><a class="back-link" href="/programmes/">← All programmes</a><p class="eyebrow">{esc(p['eyebrow'])}</p><h1>{esc(p['title'])}</h1><p>{esc(p['intro'])}</p>{button(esc(p['cta']),'/contact/?programme='+quote(p['title']),'button-lime')}</div><div class="detail-photo">{image(img,eager=True)}<span class="image-caption">THE PROTEUS WAY / {'2027 ACADEMY' if is_academy else 'QUALITY COACHING'}</span></div></section><section class="section"><div class="container"><div class="detail-intro"><p class="eyebrow">WHO IT’S FOR</p><h2>{esc(p['audience'])}</h2></div><div class="detail-features">{features}</div></div></section>{extra}<section class="detail-next"><div class="container"><div><p class="eyebrow">LET’S MAKE A PLAN</p><h2>{esc(p['cta'])}.</h2><p>Talk to our team about options, availability and the next steps.</p></div>{button('Start a conversation','/contact/?programme='+quote(p['title']),'button-primary')}</div></section><section class="section faq-section"><div class="container faq-grid"><div><p class="eyebrow">HERE TO HELP</p><h2>GOOD<br><span class="text-purple">QUESTIONS.</span></h2></div>{faq()}</div></section>'''
+    return f'''<section class="detail-hero"><div class="detail-copy"><a class="back-link" href="/programmes/">{icon("arrow-left")} All programmes</a><p class="eyebrow">{esc(p['eyebrow'])}</p><h1>{esc(p['title'])}</h1><p>{esc(p['intro'])}</p>{button(esc(p['cta']),'/contact/?programme='+quote(p['title']),'button-lime')}</div><div class="detail-photo">{image(img,eager=True)}<span class="image-caption">THE PROTEUS WAY / {'2027 ACADEMY' if is_academy else 'QUALITY COACHING'}</span></div></section><section class="section"><div class="container"><div class="detail-intro"><p class="eyebrow">WHO IT’S FOR</p><h2>{esc(p['audience'])}</h2></div><div class="detail-features">{features}</div></div></section>{extra}<section class="detail-next"><div class="container"><div><p class="eyebrow">LET’S MAKE A PLAN</p><h2>{esc(p['cta'])}.</h2><p>Talk to our team about options, availability and the next steps.</p></div>{button('Start a conversation','/contact/?programme='+quote(p['title']),'button-primary')}</div></section><section class="section faq-section"><div class="container faq-grid"><div><p class="eyebrow">HERE TO HELP</p><h2>GOOD<br><span class="text-purple">QUESTIONS.</span></h2></div>{faq()}</div></section>'''
 
 def about():
     team=''.join(f'<article class="team-person"><span class="person-initials" aria-hidden="true">{"".join(n[0] for n in p["name"].split())}</span><p class="eyebrow">{esc(p["role"])}</p><h3>{esc(p["name"])}</h3><p>{esc(p["text"])}</p>'+ (f'<a class="text-link" href="mailto:{p["email"]}">Say hello {ARROW}</a>' if p.get('email') else '') + '</article>' for p in DATA['team'])

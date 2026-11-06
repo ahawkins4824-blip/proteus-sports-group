@@ -17,6 +17,8 @@ python3 prepare_github_pages.py --base-path /proteus-sports-group --site-url htt
 
 `dist` contains source assets, styles, scripts and generated pages. `_site` is the final Pages artifact and is ignored by Git. To preview the project URL locally, serve a parent directory containing `_site` at a `proteus-sports-group` subdirectory; the live site uses that repository prefix for navigation, media and dynamic Academy links.
 
+Authored icons are shared inline SVG artwork defined in `icons.py`, so phone browsers do not substitute emoji or different font glyphs. Keep vector icons intact during dynamic label updates.
+
 Edit copy in `content.json`, homepage structure in `home_v2.py`, shared pages in `build.py`, and styles/interactions in `dist/styles.css`, `dist/motion.css`, `dist/app.js` and `dist/motion.js`. Re-run both build commands after changes.
 
 ## Included

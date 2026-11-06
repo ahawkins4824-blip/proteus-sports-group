@@ -13,3 +13,6 @@
 
 /* Existing Proteus privacy policy, styled for readable long-form text. */
 .policy-article{max-width:900px}.policy-article h1{font-size:clamp(44px,6vw,76px);margin:30px 0}.policy-article h2{font-size:38px;margin:48px 0 22px}.policy-article h3{font-family:Manrope,sans-serif;font-size:20px;font-weight:750;line-height:1.4;margin:30px 0 12px;letter-spacing:0}.policy-article p,.policy-article li{font-size:14px;line-height:1.9;color:var(--muted)}.policy-article p{margin:0 0 15px}.policy-article ol{padding-left:24px;margin:18px 0 26px}.policy-article li{padding-left:6px;margin:9px 0}.policy-article a{color:var(--purple);text-decoration:underline;text-underline-offset:3px}.policy-context{padding:20px 24px;border-left:3px solid var(--purple);background:#eeebf3;margin-bottom:36px}.policy-context p{margin:0;font-size:12px}@media(max-width:600px){.policy-article h2{font-size:31px}.policy-article h3{font-size:18px}.policy-article p,.policy-article li{font-size:12px}.policy-context{padding:17px}}
+
+/* Device-independent vector icons retain the desktop artwork on phones. */
+.icon{display:inline-block;width:1em;height:1em;vertical-align:-.125em;flex-shrink:0;overflow:visible;pointer-events:none}.icon[hidden]{display:none!important}.icon-wrap{display:inline-flex;align-items:center;justify-content:center;line-height:1;flex-shrink:0}.back-link>.icon{margin-right:6px}

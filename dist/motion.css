@@ -39,3 +39,8 @@ body.film-open{overflow:hidden}html:has(body.motion-paused),html:has(body.motion
 
 /* Preserve the complete official Academy artwork. */
 .programme-reel .rail-image-academy{background:#1b142c}.programme-reel .rail-image-academy img{object-fit:contain}.programme-reel .rail-card:hover .rail-image-academy img{transform:none}.programme-reel .rail-image-holiday-programmes img{object-position:center 60%}
+
+/* Keep authored controls consistent across desktop and mobile browsers. */
+.play-disc{padding-left:0}.play-disc>.icon{width:18px;height:18px}.hero-scroll>span>.icon{width:17px;height:17px}.carousel-buttons button>.icon{width:22px;height:22px}.film-dialog-header button{display:grid;place-items:center}.film-dialog-header button>.icon{width:24px;height:24px}.motion-control>[data-motion-icon]{display:inline-flex;align-items:center;justify-content:center;width:12px;height:12px}.motion-control>[data-motion-icon]>.icon{width:12px;height:12px}.marquee-track i{display:inline-flex;align-items:center;justify-content:center}.watch-film small>.icon,.hero-inset figcaption>.icon{width:10px;height:10px}
+
+.watch-film,.motion-control,.carousel-buttons button,.film-dialog-header button,.academy-switch button,.menu-toggle{-webkit-appearance:none;appearance:none}

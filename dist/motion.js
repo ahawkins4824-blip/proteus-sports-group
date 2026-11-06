@@ -190,7 +190,16 @@
 
     const labelButton = (button, text) => {
       if (!button) return;
-      (button.querySelector('[data-motion-label]') || button).textContent = text;
+      const label = button.querySelector('[data-motion-label]');
+      if (label) label.textContent = text;
+      else button.setAttribute('aria-label', text);
+    };
+
+    const playbackIcon = (button, paused) => {
+      const visibleIcon = paused ? 'play' : 'pause';
+      button?.querySelectorAll('[data-motion-icon] [data-icon]').forEach((icon) => {
+        icon.toggleAttribute('hidden', icon.dataset.icon !== visibleIcon);
+      });
     };
 
     const applyMotionPreference = () => {
@@ -201,6 +210,7 @@
         motionToggle.setAttribute('aria-pressed', String(paused));
         motionToggle.disabled = reducedMotion.matches;
         labelButton(motionToggle, reducedMotion.matches ? 'Motion reduced' : userPaused ? 'Play motion' : 'Pause motion');
+        playbackIcon(motionToggle, paused);
         motionToggle.title = reducedMotion.matches ? 'Your system preference reduces motion.' : '';
       }
       if (heroToggle) {
@@ -208,6 +218,7 @@
         heroToggle.setAttribute('aria-pressed', String(locallyPaused));
         heroToggle.disabled = reducedMotion.matches;
         labelButton(heroToggle, locallyPaused ? 'Play background motion' : 'Pause background motion');
+        playbackIcon(heroToggle, locallyPaused);
       }
       if (paused) {
         revealEverything();
@@ -332,7 +343,9 @@
       if (otherSportLink) {
         const otherSport = sport === 'football' ? 'basketball' : 'football';
         otherSportLink.href = `/contact/?interest=${encodeURIComponent(`Academy — ${otherSport}`)}`;
-        otherSportLink.textContent = `enquire about ${otherSport} ↗`;
+        const label = otherSportLink.querySelector('[data-other-sport-label]');
+        if (label) label.textContent = `enquire about ${otherSport}`;
+        else otherSportLink.setAttribute('aria-label', `enquire about ${otherSport}`);
       }
     };
     sportButtons.forEach((button) => button.addEventListener('click', () => selectSport(button.dataset.sport)));
