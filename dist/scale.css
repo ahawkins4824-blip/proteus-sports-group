@@ -219,7 +219,6 @@
 /* CEO brief edition (2026-11-14): Academy sports, pathway, reach, football core. */
 .academy-switch{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
 .academy-switch button{gap:10px;padding:12px 13px;min-height:46px}
-.academy-contacts{grid-template-columns:repeat(3,minmax(0,1fr))}
 
 .pathway-section{background:#fff;padding:100px 0;border-top:1px solid var(--line)}
 .pathway-head{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:end;margin-bottom:55px}
@@ -270,11 +269,9 @@
   .pathway-section,.football-core{padding:70px 0}
   .pathway-head{grid-template-columns:1fr;gap:20px;margin-bottom:36px}
   .football-core-grid{grid-template-columns:1fr;gap:40px}
-  .academy-contacts{grid-template-columns:1fr 1fr}
 }
 @media(max-width:600px){
   .academy-switch{grid-template-columns:1fr 1fr}
-  .academy-contacts{grid-template-columns:1fr}
   .pathway-track{grid-template-columns:1fr;row-gap:0}
   .pathway-track:before{display:block;left:21px;right:auto;top:0;bottom:0;width:2px;height:auto;background:linear-gradient(180deg,var(--lime),var(--purple))}
   .pathway-stage{padding:0 0 30px 64px}

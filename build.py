@@ -126,7 +126,8 @@ def programme(p):
     slug=p['slug']; is_academy=slug=='academy'
     features=''.join(f'<article><span>0{i}</span><h3>{esc(f["title"])}</h3><p>{esc(f["text"])}</p></article>' for i,f in enumerate(p['features'],1))
     if is_academy:
-        contacts='<div class="academy-contacts">'+''.join(f'<a href="/contact/?interest={quote("Academy — "+c["label"].lower())}"><span>{esc(c["label"])}</span><h3>Express your interest {ARROW}</h3><p>{esc(c["email"])}</p></a>' for c in p['contacts'])+'</div>'
+        sports=' · '.join(esc(c['label']) for c in p['contacts'])
+        contacts=f'<div class="academy-contacts"><a href="/contact/?programme={quote(p["title"])}"><span>{sports}</span><h3>Express your interest {ARROW}</h3><p>info@proteus.nz</p></a></div>'
         extra=f'<section class="section"><div class="container"><p class="eyebrow">TAKE THE FIRST STEP</p><h2>YOUR JOURNEY.<br><span class="text-purple">LET’S TALK.</span></h2><p class="measure">{esc(p["enquiryGuidance"])}</p>{contacts}</div></section>'
     else: extra=''
     index = PROGRAMMES.index(p)
