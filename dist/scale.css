@@ -1,0 +1,217 @@
+/* Scale & programmes edition (2026-11-14): numbers, partners, action photography and nine programmes. */
+
+/* Shared bits */
+.tick{display:inline-flex;flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--lime);color:var(--purple);align-items:center;justify-content:center}
+.tick .icon{width:13px;height:13px;stroke-width:2.6}
+.tick-list{list-style:none;margin:0 0 30px;padding:0;display:grid;gap:12px}
+.tick-list li{display:flex;align-items:flex-start;gap:12px;font-weight:650;line-height:1.5}
+.tick-list li .tick{margin-top:1px}
+.tick-list-large li{font-size:17px;padding:16px 0;border-bottom:1px solid var(--line)}
+.tick-list-large{gap:0}
+
+/* Numbers band */
+.scale-band{background:var(--paper);padding:95px 0 85px;border-bottom:1px solid var(--line)}
+.scale-head{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:end;margin-bottom:55px}
+.scale-head h2{margin:0}
+.scale-head h2 span{color:var(--purple-light)}
+.scale-head>p{font-size:16px;color:var(--muted);max-width:520px;margin:0}
+.scale-stats{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:2px solid var(--purple)}
+.scale-stats li{padding:28px 22px 6px 0;border-right:1px solid var(--line);margin-right:22px;display:flex;flex-direction:column}
+.scale-stats li:last-child{border-right:0;margin-right:0}
+.scale-stats strong{font-family:var(--display);font-size:clamp(54px,6.2vw,92px);line-height:.9;color:var(--purple);letter-spacing:-.02em;margin-bottom:16px}
+.stat-label{font-weight:800;font-size:13px;line-height:1.4;color:var(--ink);margin-bottom:6px}
+.stat-note{font-size:11px;color:var(--muted);line-height:1.5}
+.scale-sports{margin-top:50px;display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+.scale-sports .eyebrow{margin:0}
+.scale-sports ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.scale-sports li{border:1px solid #bfb0ce;background:#fff;color:var(--purple);padding:9px 16px;font-size:12px;font-weight:750;border-radius:999px}
+.scale-sports li.core{background:var(--purple);border-color:var(--purple);color:#fff}
+.scale-sports li em{font-style:normal;color:var(--lime);font-size:9px;letter-spacing:.12em;text-transform:uppercase;margin-left:8px}
+
+/* Action mosaic */
+.action-mosaic{background:#17131e;color:#fff;padding:100px 0}
+.mosaic-head{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:end;margin-bottom:45px}
+.mosaic-head h2{margin:0}
+.mosaic-head h2 span{color:var(--lime)}
+.mosaic-head>p{color:#cfc7d8;font-size:16px;max-width:480px;margin:0}
+.mosaic-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:230px;grid-auto-flow:dense;gap:14px}
+.mosaic-item{position:relative;overflow:hidden;background:#2a2333;display:block}
+.mosaic-item img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .4s}
+.mosaic-item:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 55%,#120d18c9)}
+.mosaic-item:hover img{transform:scale(1.05)}
+.mosaic-big{grid-column:span 2;grid-row:span 2}
+.mosaic-tall{grid-row:span 2}
+.mosaic-wide{grid-column:span 2}
+.mosaic-caption{position:absolute;z-index:1;left:18px;right:18px;bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.mosaic-caption .icon{width:16px;height:16px;flex-shrink:0;transition:transform .3s}
+.mosaic-item:hover .mosaic-caption .icon{transform:translate(3px,-3px);color:var(--lime)}
+.mosaic-item:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+
+/* Partners wall */
+.partners-wall{background:var(--lavender);padding:100px 0}
+.partners-head{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:end;margin-bottom:50px}
+.partners-head h2{margin:0}
+.partners-head h2 span{color:var(--purple-light)}
+.partners-head>p{font-size:16px;color:var(--muted);max-width:500px;margin:0}
+.partners-cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}
+.partners-col{background:#fff;padding:30px 30px 26px;border-top:4px solid var(--purple)}
+.partners-col h3{display:flex;align-items:baseline;gap:12px;font-size:19px;margin:0 0 20px;color:var(--purple)}
+.partners-col h3 span{font-family:var(--display);font-size:44px;line-height:1;color:var(--purple-light)}
+.partners-col ul{list-style:none;margin:0;padding:0;columns:1}
+.partners-cols .partners-col:first-child ul{columns:2;column-gap:26px}
+.partners-col li{font-size:13px;font-weight:650;padding:9px 0;border-bottom:1px solid var(--line);break-inside:avoid}
+
+/* 2026 band on the homepage */
+.update-band{background:var(--purple);color:#fff;padding:100px 0;overflow:hidden}
+.update-band-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.update-band-photo{position:relative}
+.update-band-photo img{width:100%;height:560px;object-fit:cover;object-position:50% 60%}
+.update-band-photo .photo-note{background:var(--lime);color:var(--purple)}
+.update-band-copy h2 span{color:var(--lime)}
+.update-band-copy>p{color:#ded6e8;font-size:16px}
+.update-band .eyebrow .status-dot,.update-hero .status-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--lime);margin-right:8px;vertical-align:middle}
+
+/* Programme cards + graphic panel (programmes without photography yet) */
+.card-label{font-size:9px;font-weight:800;letter-spacing:.14em;color:var(--purple-light);margin:0 0 6px!important}
+.graphic-panel{position:relative;width:100%;height:100%;min-height:100%;background:radial-gradient(circle at 80% 15%,#694493 0,#35175c 55%,#22103d 100%);color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:26px;overflow:hidden;font-family:var(--display);font-weight:700;line-height:.95;letter-spacing:-.01em;font-size:clamp(30px,3.2vw,48px)}
+.graphic-panel span{position:relative;z-index:1}
+.graphic-panel span:nth-of-type(2){color:var(--lime)}
+.graphic-rings{position:absolute;right:-18%;top:-22%;width:85%;aspect-ratio:1;border-radius:50%;border:2px solid #d7ef7055;box-shadow:0 0 0 34px #ffffff08,0 0 0 70px #ffffff06,0 0 0 110px #ffffff05}
+.detail-photo .graphic-panel{position:absolute;inset:0;padding:50px;font-size:clamp(56px,7vw,110px)}
+.rail-image .graphic-panel{font-size:44px}
+
+/* Programme detail extras */
+.detail-facts{background:var(--lime);color:var(--purple)}
+.detail-facts ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.detail-facts li{padding:38px 30px 36px 0;display:flex;flex-direction:column;gap:8px;border-right:1px solid #35175c33;margin-right:30px}
+.detail-facts li:last-child{border-right:0;margin-right:0}
+.detail-facts strong{font-family:var(--display);font-size:clamp(38px,4.4vw,62px);line-height:.95;text-transform:uppercase}
+.detail-facts span{font-size:13px;font-weight:700}
+.detail-blocks-section{padding-bottom:40px}
+.detail-blocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+.detail-block{background:#fff;padding:34px;border-top:4px solid var(--purple);margin:0}
+.detail-block .eyebrow{color:var(--purple-light)}
+.detail-block .tick-list{margin:0;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:30px}
+.detail-photo{overflow:hidden}
+.detail-partners ul{list-style:none;margin:0;padding:0;columns:2;column-gap:24px}
+.detail-partners li{font-size:13px;font-weight:650;padding:8px 0;border-bottom:1px solid var(--line);break-inside:avoid}
+.detail-story{background:var(--purple);color:#fff;border-top-color:var(--lime)}
+.detail-story .eyebrow{color:var(--lime)}
+.detail-story blockquote{margin:0 0 20px;font-family:var(--display);font-size:clamp(30px,3vw,42px);line-height:1.02;text-transform:uppercase}
+.detail-story figcaption{color:#ded6e8;font-size:13px}
+.detail-gallery{padding:20px 0 100px}
+.gallery-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:14px}
+.gallery-grid figure{margin:0;height:380px;overflow:hidden;background:#d9d3df}
+.gallery-grid img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.gallery-grid figure:hover img{transform:scale(1.04)}
+.next-programme{border-top:1px solid var(--line);background:#fff}
+.next-programme a{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:34px 0;color:var(--purple)}
+.next-programme .eyebrow{margin:0;color:var(--muted)}
+.next-programme strong{font-family:var(--display);font-size:clamp(30px,4vw,54px);text-transform:uppercase;line-height:1;margin-left:auto;margin-right:24px}
+.next-programme .icon-wrap{font-size:28px}
+.next-programme a:hover strong{color:var(--purple-light)}
+
+/* Footer programme index */
+.footer-programmes{display:grid;grid-template-columns:200px 1fr;gap:30px;padding:28px 0 30px;border-top:1px solid #d7d2da}
+.footer-programmes>div{display:flex;flex-wrap:wrap;gap:8px 26px}
+.footer-programmes a{font-size:12px;font-weight:700;color:var(--purple)}
+.footer-programmes a:hover{color:var(--purple-light)}
+
+/* 2026 update page */
+.update-hero{position:relative;background:#17131e;color:#fff;min-height:620px;display:flex;align-items:flex-end;overflow:hidden}
+.update-hero-photo{position:absolute;inset:0}
+.update-hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 62%;opacity:.55}
+.update-hero-photo:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#17131ef2 0%,#17131eb3 45%,#17131e33 100%)}
+.update-hero-copy{position:relative;z-index:1;padding:150px 0 80px}
+.update-hero h1{font-size:clamp(78px,10vw,150px);line-height:.88;margin:0 0 28px}
+.update-hero h1 span{color:var(--lime)}
+.update-hero-copy>p:last-child{max-width:640px;font-size:17px;color:#e6e0ee}
+.update-record{padding:95px 0 70px}
+.update-record-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:80px}
+.update-stories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.update-story{display:grid;grid-template-columns:200px 1fr;gap:26px;background:#fff;padding:22px;align-items:start}
+.update-story-photo{height:200px;overflow:hidden}
+.update-story-photo img{width:100%;height:100%;object-fit:cover}
+.update-story h3{margin-bottom:10px}
+.update-story p:last-child{font-size:13px;color:var(--muted);margin:0}
+.update-story .eyebrow{margin-bottom:10px;color:var(--purple-light)}
+.update-sports{background:var(--purple);color:#fff;padding:100px 0}
+.update-sports-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:center}
+.update-sports h2 span{color:var(--lime)}
+.update-sports-grid>div>p{color:#ded6e8;font-size:16px;max-width:480px}
+.sport-tiles{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.sport-tiles li{border:1px solid #ffffff33;padding:26px 20px;font-family:var(--display);font-size:clamp(22px,2.2vw,30px);text-transform:uppercase;line-height:1;min-height:120px;display:flex;flex-direction:column;justify-content:space-between}
+.sport-tiles li.core{background:var(--lime);color:var(--purple);border-color:var(--lime)}
+.sport-tiles li em{font-family:var(--body);font-style:normal;font-size:9px;letter-spacing:.14em;font-weight:800;margin-top:14px}
+.team-grid.team-grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.coach-roll{background:var(--lavender);padding:100px 0}
+.coach-roll-head{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:end;margin-bottom:45px}
+.coach-roll-head h2{margin:0}
+.coach-roll-head h2 span{color:var(--purple-light)}
+.coach-roll-head>p{color:var(--muted);font-size:16px;margin:0;max-width:500px}
+.coach-names{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 28px}
+.coach-names li{padding:12px 0;border-bottom:1px solid #cfc5da;font-weight:700;font-size:14px;color:var(--purple)}
+.update-ahead{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:start}
+.update-signoff{font-size:20px;font-weight:700;line-height:1.5;color:var(--purple);border-left:4px solid var(--lime);padding-left:22px;margin-top:30px}
+.update-signoff span{display:block;font-size:12px;color:var(--muted);font-weight:700;margin-top:10px;letter-spacing:.06em}
+.ahead-list{list-style:none;margin:0;padding:0}
+.ahead-list li{display:flex;gap:22px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--line);font-size:18px;font-weight:700}
+.ahead-list li span{font-family:var(--display);font-size:30px;color:var(--purple-light);line-height:1}
+
+@media(max-width:1150px){
+  .scale-stats{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:10px}
+  .scale-stats li:nth-child(3){border-right:0;margin-right:0}
+  .mosaic-grid{grid-auto-rows:200px}
+  .partners-cols{grid-template-columns:1fr 1fr}
+  .partners-cols .partners-col:first-child{grid-column:1/-1}
+  .partners-cols .partners-col:first-child ul{columns:3}
+  .update-story{grid-template-columns:1fr}
+  .update-story-photo{height:220px}
+  .coach-names{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:900px){
+  .scale-band,.action-mosaic,.partners-wall,.update-band,.update-sports,.coach-roll{padding:70px 0}
+  .scale-head,.mosaic-head,.partners-head,.coach-roll-head{grid-template-columns:1fr;gap:20px;margin-bottom:36px}
+  .update-band-grid,.update-sports-grid,.update-record-grid,.update-ahead{grid-template-columns:1fr;gap:40px}
+  .update-band-photo img{height:400px}
+  .mosaic-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:190px}
+  .detail-facts li{padding:28px 18px 26px 0;margin-right:18px}
+  .gallery-grid{grid-template-columns:1fr 1fr}
+  .gallery-grid figure{height:280px}
+  .gallery-grid figure:first-child{grid-column:1/-1}
+  .team-grid.team-grid-3{grid-template-columns:1fr 1fr}
+  .footer-programmes{grid-template-columns:1fr;gap:12px}
+}
+@media(max-width:600px){
+  .scale-stats{grid-template-columns:1fr 1fr}
+  .scale-stats li,.scale-stats li:nth-child(3){border-right:0;margin-right:0;padding:22px 10px 8px 0}
+  .scale-stats li:last-child{grid-column:1/-1}
+  .scale-stats strong{font-size:56px;margin-bottom:10px}
+  .scale-sports{gap:14px;margin-top:36px}
+  .scale-sports li{font-size:11px;padding:8px 13px}
+  .mosaic-grid{grid-auto-rows:150px;gap:8px}
+  .mosaic-big{grid-row:span 2}
+  .mosaic-caption{font-size:9px;left:12px;right:12px;bottom:10px;letter-spacing:.08em}
+  .partners-cols{grid-template-columns:1fr}
+  .partners-cols .partners-col:first-child ul{columns:2}
+  .partners-col{padding:24px 20px}
+  .detail-facts ul{grid-template-columns:1fr}
+  .detail-facts li{border-right:0;margin-right:0;border-bottom:1px solid #35175c33;padding:22px 0}
+  .detail-facts li:last-child{border-bottom:0}
+  .detail-block{padding:26px 22px}
+  .detail-blocks{grid-template-columns:1fr}
+  .gallery-grid figure{height:200px}
+  .next-programme a{flex-wrap:wrap;padding:26px 0}
+  .next-programme strong{margin:0;flex:1}
+  .update-hero{min-height:520px}
+  .update-hero-copy{padding:120px 0 50px}
+  .sport-tiles{grid-template-columns:1fr 1fr}
+  .sport-tiles li{min-height:96px;padding:20px 16px}
+  .team-grid.team-grid-3{grid-template-columns:1fr}
+  .coach-names{grid-template-columns:1fr 1fr;column-gap:16px}
+  .coach-names li{font-size:12px}
+  .tick-list-large li{font-size:15px}
+  .ahead-list li{font-size:15px}
+  .graphic-panel{padding:20px;font-size:34px}
+  .detail-photo .graphic-panel{padding:28px;font-size:54px}
+}

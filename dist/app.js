@@ -84,11 +84,15 @@
     const requested = query.get('interest') || query.get('programme');
     const aliases = {
       'individual-performance-coaching': 'Individual & Performance Coaching',
-      'academy': 'Proteus Academy',
+      'academy': '2027 Athlete Academy',
+      'proteus academy': '2027 Athlete Academy',
       'early-years-fundamentals': 'Early Years & Fundamentals',
       'school-sports-coaching': 'School Sports & Coaching',
       'holiday-programmes': 'Holiday Programmes',
       'coach-development': 'Coach Development',
+      'community-organisation': 'Community Organisation',
+      'active-age-programme': 'Active Age Programme',
+      'teacher-aid': 'Teacher Aid',
     };
 
     if (interest && requested) {

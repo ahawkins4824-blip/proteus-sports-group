@@ -13,6 +13,7 @@ PATHS = {
     'plus': '<path d="M12 5v14M5 12h14"/>',
     'close': '<path d="m6 6 12 12M6 18 18 6"/>',
     'asterisk': '<path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/>',
+    'check': '<path d="m4 12.5 5 5L20 6.5"/>',
 }
 
 

@@ -19,15 +19,15 @@ python3 prepare_github_pages.py --base-path /proteus-sports-group --site-url htt
 
 Authored icons are shared inline SVG artwork defined in `icons.py`, so phone browsers do not substitute emoji or different font glyphs. Keep vector icons intact during dynamic label updates.
 
-Edit copy in `content.json`, homepage structure in `home_v2.py`, shared pages in `build.py`, and styles/interactions in `dist/styles.css`, `dist/motion.css`, `dist/app.js` and `dist/motion.js`. Re-run both build commands after changes.
+Edit copy, programmes (in display order), stats, partner lists, the 2026 update and photo alt text in `content.json`; homepage structure in `home_v2.py`; shared pages in `build.py`; and styles/interactions in `dist/styles.css`, `dist/motion.css`, `dist/scale.css` (numbers band, partners, photo mosaic, programme extras, 2026 page), `dist/app.js` and `dist/motion.js`. Re-run both build commands after changes.
 
 ## Included
 
-The homepage, six programme pages, programme explorer, team/approach page, contact page, existing privacy policy, 404 page and legacy URL aliases. The homepage has one programme carousel, six visible programme buttons, authentic video and a curated Instagram reel/post grid. Mobile navigation, accessible FAQs, local fonts and reduced-motion controls are included.
+The homepage, nine programme pages (Individual & Performance Coaching, 2027 Athlete Academy, Early Years & Fundamentals, School Sports & Coaching, Holiday Programmes, Coach Development, Community Organisation, Active Age Programme, Teacher Aid), programme explorer, 2026 update page, team/approach page, contact page, existing privacy policy, 404 page and legacy URL aliases. The homepage has a numbers band, a nine-programme carousel with quick links, an action photo mosaic, the Academy feature, a partners wall, a 2026 update band, authentic video and a curated Instagram reel/post grid. Mobile navigation, accessible FAQs, local fonts and reduced-motion controls are included.
 
 The contact form prepares an email draft for the visitor to review and send in their email app. It does not submit or store messages itself. The alternative online form remains at https://proteus-sports.squarespace.com/contact-1; keep that service available while linked.
 
-Images and videos are original Proteus material. Provenance and font licences are in `dist/assets`. Saved approved designs remain under `dist/approved-v1`, `dist/approved-v2` and `dist/approved-v3`; exported copies retain working links and noindex metadata.
+Images and videos are original Proteus material. Action photos (`dist/assets/pa-*.webp`) come from the Proteus shared Drive folder; see `dist/assets/action-photo-sources.json`. Active Age uses a branded graphic panel until suitable photos are available. Provenance and font licences are in `dist/assets`. Saved approved designs remain under `dist/approved-v1`, `dist/approved-v2` and `dist/approved-v3`; exported copies retain working links and noindex metadata.
 
 ## Hosting and domain
 
