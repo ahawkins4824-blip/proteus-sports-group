@@ -111,9 +111,12 @@
 
       const selectedInterest = interest?.selectedOptions?.[0]?.textContent.trim() || valueOf('interest');
       const topic = selectedInterest || 'General enquiry';
-      const recipient = topic === 'Academy — football' ? 'oliver@proteus.nz'
-        : topic === 'Academy — basketball' ? 'isaac@proteus.nz'
-        : 'info@proteus.nz';
+      const academyContacts = {
+        'Academy — football': 'oliver@proteus.nz',
+        'Academy — futsal': 'oliver@proteus.nz',
+        'Academy — basketball': 'isaac@proteus.nz',
+      };
+      const recipient = academyContacts[topic] || 'info@proteus.nz';
       const subject = `Website enquiry — ${topic}`;
       const message = [
         'Kia ora Proteus team,',

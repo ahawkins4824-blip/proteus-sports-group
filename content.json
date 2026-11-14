@@ -7,6 +7,28 @@
     { "value": "2018", "label": "Founded in Christchurch", "note": "Trusted across Canterbury" }
   ],
   "sports": ["Football", "Futsal", "Basketball", "Hockey", "Touch Rugby", "Cricket"],
+  "tagline": "People first. Development always.",
+  "reach": [
+    { "value": "Nearly all", "text": "football clubs across Canterbury" },
+    { "value": "Nearly all", "text": "primary schools across Canterbury" },
+    { "value": "Leading", "text": "secondary schools, including some of New Zealand’s most prestigious" },
+    { "value": "NGOs", "text": "and community organisations" },
+    { "value": "Universities", "text": "and coaching institutes, creating pathways into the industry" }
+  ],
+  "pathway": [
+    { "title": "Early Foundations & Fundamentals", "summary": "Movement skills and a positive first experience of sport in preschools and Montessori centres.", "items": ["Early childhood coaching in preschool and Montessori environments", "Fundamental movement skills and early sporting development", "Confidence, engagement and a positive relationship with sport"], "links": ["early-years-fundamentals"] },
+    { "title": "Primary School Activation", "summary": "Before, during and after-school programmes that get every child involved.", "items": ["Primary school sporting programmes and activations", "Before-school, during-school and after-school delivery", "Accessible, sustainable sporting opportunities for schools"], "links": ["school-sports-coaching", "holiday-programmes"] },
+    { "title": "Community & School Sport", "summary": "Consistent club and secondary school coaching that strengthens sporting structures.", "items": ["Local club coaching and programme delivery", "Secondary school coaching and sporting programmes", "Consistent coaching and operational support for clubs and schools"], "links": ["school-sports-coaching", "community-organisation"] },
+    { "title": "Advanced Coaching & Performance", "summary": "Academy, regional and high-performance coaching, plus specialised 1:1 and small-group work.", "items": ["Academy-level club and regional coaching", "Performance coaching and high-performance environments", "Individual and small-group specialised performance coaching"], "links": ["academy", "individual-performance-coaching"] },
+    { "title": "Network & Industry Development", "summary": "Coach and player education, networking, travel and events that grow the sporting network.", "items": ["Coach and player education and development", "Networking and professional development opportunities", "Travel, connections, events and industry engagement"], "links": ["coach-development"] },
+    { "title": "Organisational & Community Support", "summary": "Governance, recruitment and marketing support, plus teacher aide and elderly care programmes.", "items": ["Strategic, governance and organisational development support", "Sports management, recruitment and marketing support", "Teacher aide support in schools", "Elderly care, engagement and respite programmes", "Community initiatives that promote inclusion and wellbeing"], "links": ["teacher-aid", "active-age-programme", "community-organisation"] }
+  ],
+  "philosophy": ["Technical and fundamental skill development", "Individual player development and progression", "Decision-making, game understanding and tactical awareness", "Confidence, resilience and accountability", "Positive, challenging and engaging learning environments", "Coaches who understand the technical and human sides of sport", "Clear development pathways and progression opportunities"],
+  "beyond": [
+    { "title": "Coaching expertise", "text": "Recruiting, supporting and managing coaching programmes, from single sessions to full club and school structures." },
+    { "title": "Operational support", "text": "A robust operational system and an internal management team that keep standards, consistency and quality high." },
+    { "title": "Sports business capability", "text": "Strategic and governance support, recruitment, sports marketing and organisational development that help partners build sustainable programmes." }
+  ],
   "partners": {
     "schools": ["Christ’s College", "Christchurch Boys’ High School", "Middleton Grange", "St Andrew’s College", "Rangi Ruru", "Haeata Community School", "St Andrew’s Preparatory School", "Medbury School", "Selwyn House", "Casebrook Intermediate", "Chisnallwood School", "Bishopdale Primary School", "Bromley Primary School", "Yaldhurst Primary School", "Te Waka Unua School"],
     "clubs": ["Halswell United", "Papanui Redwood", "Coastal Spirit", "Prebbleton FC", "St Albans Shirley", "Westland United FC"],
@@ -54,11 +76,11 @@
       "intro": "Personalised 1:1 football and athlete development with experienced, qualified coaches. Since 2019 we’ve worked with hundreds of players across the region, and individual development is one of our fastest-growing areas.",
       "audience": "Engaged, motivated players who want to strengthen specific areas of their game, prepare for a season or take the next step.",
       "features": [
-        { "title": "Built around you", "text": "Every session is tailored to the player: technical ability, decision-making, tactical understanding, confidence and overall performance." },
-        { "title": "Highly qualified coaches", "text": "Our leading football coaches hold OFC B Licences and our Director is completing his A Licence. Our network connects athletes with specialists in other sports too." },
-        { "title": "Real milestones", "text": "We’ve supported players towards overseas university opportunities, high school first teams, senior men’s debuts and other big football milestones." }
+        { "title": "Built around you", "text": "Every session is tailored to the player: technical ability, decision-making, tactical understanding, confidence and overall performance. Available all year round." },
+        { "title": "Highly qualified coaches", "text": "Football operations are led by our Director, an OFC A Licence coach who oversees the academy and first team at a large membership club. Our leading coaches hold OFC B Licences." },
+        { "title": "Real milestones", "text": "We help players progress beyond the environments where they started: towards overseas university opportunities, high school first teams, senior men’s debuts and higher levels of competition." }
       ],
-      "facts": [["Since 2019", "Hundreds of players coached"], ["All year", "Pre-season, in-season and post-season"], ["OFC B", "Licensed lead coaches"]],
+      "facts": [["Since 2019", "Hundreds of players coached"], ["OFC A", "Licence-qualified Director"], ["10+ years", "Football expertise, grassroots to high performance"]],
       "email": "patrick@proteus.nz",
       "cta": "Discuss your development"
     },
@@ -67,25 +89,29 @@
       "title": "2027 Athlete Academy",
       "short": "2027 Athlete<br>Academy",
       "label": "2027 INTAKE",
-      "caption": "Football and basketball development alongside school and club sport.",
+      "caption": "Development across all six of our sports, alongside school and club sport.",
       "tags": ["players"],
       "image": "pa-academy-huddle",
       "rail_image": "academy-2027",
       "gallery": ["pa-floodlights", "pa-first-team", "pa-coach-talk"],
       "eyebrow": "2027 intake · Expressions of interest open",
-      "intro": "For ambitious young football and basketball players who are ready to work hard, learn and keep developing. A structured programme that supports your journey alongside your existing school and club environment.",
-      "audience": "Young football and basketball athletes with the ambition to develop and the commitment to put in the work.",
+      "intro": "For ambitious young athletes in football, futsal, basketball, hockey, touch rugby and cricket who are ready to work hard, learn and keep developing. A structured programme that supports your journey alongside your existing school and club environment.",
+      "audience": "Young athletes across all six of our sports with the ambition to develop and the commitment to put in the work.",
       "features": [
         { "title": "Develop the whole athlete", "text": "A programme bringing together technical development, athletic performance, performance psychology and athlete education." },
         { "title": "A plan for your progress", "text": "Small-group development, individual planning and regular feedback help you understand what to work on next." },
         { "title": "Support along the way", "text": "Coaching and ongoing guidance that work alongside your school and club commitments." }
       ],
-      "facts": [["2 sports", "Football and basketball"], ["4 pillars", "Skills, engine, mindset, understanding"], ["2027", "Expressions of interest open"]],
+      "facts": [["6 sports", "Football, futsal, basketball, hockey, touch rugby & cricket"], ["4 pillars", "Skills, engine, mindset, understanding"], ["2027", "Expressions of interest open"]],
       "email": "oliver@proteus.nz",
       "cta": "Express your interest",
       "contacts": [
         { "label": "Football", "email": "oliver@proteus.nz" },
-        { "label": "Basketball", "email": "isaac@proteus.nz" }
+        { "label": "Futsal", "email": "oliver@proteus.nz" },
+        { "label": "Basketball", "email": "isaac@proteus.nz" },
+        { "label": "Hockey", "email": "info@proteus.nz" },
+        { "label": "Touch Rugby", "email": "info@proteus.nz" },
+        { "label": "Cricket", "email": "info@proteus.nz" }
       ],
       "enquiryGuidance": "Tell us your name and age, sport, school, and current team or club. Our team will be in touch to discuss your journey and the next steps."
     },
@@ -121,14 +147,14 @@
       "image": "pa-school-celebrate",
       "gallery": ["pa-school-team", "pa-first-team", "pa-school-turf"],
       "eyebrow": "The right coaches. The right programmes.",
-      "intro": "We partner with primary, intermediate and secondary schools and universities to provide professional coaches and tailored programmes. Whether you need a specialist coach, support for your existing programme or a complete coaching solution, we’ll find the right fit.",
+      "intro": "We partner with primary, intermediate and secondary schools and universities to provide professional coaches and tailored programmes. From before-school and lunchtime activations to after-school programmes, school teams and complete coaching solutions, we’ll find the right fit.",
       "audience": "Principals, Heads of Sport and PE, sports coordinators and team managers across primary, intermediate and secondary schools.",
       "features": [
         { "title": "Coach recruitment", "text": "We recruit the coaches, you focus on your students. Flexible support for individual teams, extracurricular activities and seasonal needs." },
         { "title": "Programme delivery", "text": "From regular training to structured development programmes, we deliver engaging, organised sport that fits your school’s goals." },
         { "title": "Every level", "text": "From primary school fundamentals to first XI competition and university performance, coaching tailored to every age and ambition." }
       ],
-      "facts": [["~60", "Coaches delivering in Q1 2026"], ["6 sports", "Football at the heart"], ["Dozens", "Of schools and clubs supported"]],
+      "facts": [["~60", "Coaches delivering in Q1 2026"], ["6 sports", "Football at the heart"], ["Nearly all", "Canterbury primary schools worked with since 2018"]],
       "list": { "title": "Sports we coach", "items": ["Football", "Futsal", "Basketball", "Hockey", "Touch Rugby", "Cricket"] },
       "partners": "schools",
       "email": "patrick@proteus.nz",
@@ -173,6 +199,7 @@
         { "title": "Aotearoa Coaches Association", "text": "Our coach development and networking arm, with study tours through England, Spain and Italy and priority pathways into Proteus roles." }
       ],
       "facts": [["3 courses", "From junior to youth level"], ["Europe", "ACA study tours"], ["60+", "Coaches in our network"]],
+      "list": { "title": "What our network gives coaches", "items": ["Meaningful, paid coaching work", "Quick onboarding into sessions", "Reliable fortnightly payments", "Mentoring and professional development", "Pathways with universities and coaching institutes", "Networking, travel and industry connections"] },
       "story": { "title": "From introduction coach to senior football", "text": "Patrick Rousse started as an introduction-level coach. He has since progressed into high-level senior men’s football and works full-time in the game.", "quote": "Every coach starts somewhere. Your first session doesn’t define your ceiling." },
       "email": "oliver@proteus.nz",
       "cta": "Talk coach development"
@@ -195,6 +222,7 @@
         { "title": "A supportive environment", "text": "Professional coaches who create welcoming sessions where everyone can enjoy the benefits of physical activity." }
       ],
       "facts": [["7+", "Community partners"], ["2 councils", "Christchurch City and Selwyn District"], ["All ages", "Inclusive by design"]],
+      "list": { "title": "Support beyond the session", "items": ["Strategic and governance support", "Sports management and recruitment", "Sports marketing and promotion", "Organisational development and programme growth", "Community initiatives that promote inclusion and wellbeing"] },
       "partners": "community",
       "email": "info@proteus.nz",
       "cta": "Plan a community programme"
@@ -210,7 +238,7 @@
       "graphic": ["MOVEMENT.", "MIND.", "CONFIDENCE."],
       "eyebrow": "Movement. Mind. Confidence. At every stage of life.",
       "intro": "Active Age is our movement programme for older adults in retirement villages. It adapts the proven methods behind our preschool programme to maintain mobility, coordination, confidence and cognitive function through enjoyable, low-impact activity.",
-      "audience": "Retirement villages and communities looking to support residents’ health, independence and wellbeing.",
+      "audience": "Retirement villages and elderly care providers looking for engagement and respite programmes that support residents’ health, independence and wellbeing.",
       "features": [
         { "title": "Safe and inclusive", "text": "Low-impact, age-appropriate activities led by Proteus-trained coaches, with chair-based options and minimal equipment or space needed." },
         { "title": "Body and mind", "text": "Balance and fall-prevention, hand–eye and foot–eye coordination, and reaction-based games that keep the mind sharp." },
@@ -265,7 +293,7 @@
     {
       "name": "Oliver Hawkins",
       "role": "Owner, Director & Co-founder",
-      "text": "Co-founded Proteus in 2018. Director of Football and Head Coach at Halswell United AFC, and Head Coach of the Christ’s College First XI.",
+      "text": "Co-founded Proteus in 2018 and leads our football operations. An OFC A Licence coach, he is Director of Football at Halswell United AFC, overseeing its academy and first team, and Head Coach of the Christ’s College First XI.",
       "email": "oliver@proteus.nz"
     },
     {
@@ -307,11 +335,19 @@
     },
     {
       "question": "How do I express interest in the 2027 Academy?",
-      "answer": "Email oliver@proteus.nz for football or isaac@proteus.nz for basketball. Include your name and age, sport, school, and current team or club. The team will be in touch to discuss the next steps."
+      "answer": "Email oliver@proteus.nz for football or futsal, isaac@proteus.nz for basketball, or info@proteus.nz for hockey, touch rugby and cricket. Include your name and age, sport, school, and current team or club. The team will be in touch to discuss the next steps."
     },
     {
       "question": "Where can I find holiday dates and registration details?",
       "answer": "Contact oliver@proteus.nz for upcoming holiday programmes, locations and registration information. Programme details vary, so check the information for the specific camp before booking."
+    },
+    {
+      "question": "Can Proteus help our organisation beyond coaching?",
+      "answer": "Yes. Alongside coaching we offer operational support and sports business capability: strategic and governance support, sports management and recruitment, sports marketing and promotion, and organisational development to help you build sustainable programmes."
+    },
+    {
+      "question": "What is it like to coach with Proteus?",
+      "answer": "You join a network of 60+ coaches with quick onboarding into sessions, reliable fortnightly payments and a strong focus on support and retention. We help coaches gain experience, develop professionally and find pathways into the industry."
     },
     {
       "question": "How can our school or club work with Proteus?",

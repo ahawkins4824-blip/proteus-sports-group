@@ -329,27 +329,22 @@
     const sportLink = document.getElementById('academy-sport-link');
     const sportContact = document.getElementById('academy-sport-contact');
     const sportDescription = document.getElementById('academy-sport-description');
-    const otherSportLink = document.getElementById('academy-other-sport');
+    // Each sport button carries its own label and contact email (data-label, data-email).
     const selectSport = (sport) => {
-      if (!['football', 'basketball'].includes(sport)) return;
-      sportButtons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.sport === sport)));
-      const email = sport === 'football' ? 'oliver@proteus.nz' : 'isaac@proteus.nz';
+      const chosen = sportButtons.find((button) => button.dataset.sport === sport);
+      if (!chosen) return;
+      sportButtons.forEach((button) => button.setAttribute('aria-pressed', String(button === chosen)));
+      const email = chosen.dataset.email || 'info@proteus.nz';
+      const label = chosen.dataset.label || sport;
       if (sportLink) sportLink.href = `/contact/?interest=${encodeURIComponent(`Academy — ${sport}`)}`;
       if (sportContact) {
         sportContact.textContent = email;
         if (sportContact.tagName === 'A') sportContact.href = `mailto:${email}`;
       }
-      if (sportDescription) sportDescription.textContent = `${sport === 'football' ? 'Football' : 'Basketball'} development. Your next step starts here.`;
-      if (otherSportLink) {
-        const otherSport = sport === 'football' ? 'basketball' : 'football';
-        otherSportLink.href = `/contact/?interest=${encodeURIComponent(`Academy — ${otherSport}`)}`;
-        const label = otherSportLink.querySelector('[data-other-sport-label]');
-        if (label) label.textContent = `enquire about ${otherSport}`;
-        else otherSportLink.setAttribute('aria-label', `enquire about ${otherSport}`);
-      }
+      if (sportDescription) sportDescription.textContent = `${label} development. Your next step starts here.`;
     };
     sportButtons.forEach((button) => button.addEventListener('click', () => selectSport(button.dataset.sport)));
-    if (sportButtons.length) selectSport(sportButtons.find((button) => button.getAttribute('aria-pressed') === 'true')?.dataset.sport || 'football');
+    if (sportButtons.length) selectSport((sportButtons.find((button) => button.getAttribute('aria-pressed') === 'true') || sportButtons[0]).dataset.sport);
 
     window.addEventListener('scroll', scheduleFrame, { passive: true });
     window.addEventListener('resize', () => {

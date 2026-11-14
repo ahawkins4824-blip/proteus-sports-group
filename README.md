@@ -19,7 +19,7 @@ python3 prepare_github_pages.py --base-path /proteus-sports-group --site-url htt
 
 Authored icons are shared inline SVG artwork defined in `icons.py`, so phone browsers do not substitute emoji or different font glyphs. Keep vector icons intact during dynamic label updates.
 
-Edit copy, programmes (in display order), stats, partner lists, the 2026 update and photo alt text in `content.json`; homepage structure in `home_v2.py`; shared pages in `build.py`; and styles/interactions in `dist/styles.css`, `dist/motion.css`, `dist/scale.css` (numbers band, partners, photo mosaic, programme extras, 2026 page), `dist/app.js` and `dist/motion.js`. Re-run both build commands after changes.
+Edit copy, programmes (in display order, including the Academy sports and their contact emails), stats, Canterbury reach, the six-stage pathway, coaching philosophy, partner lists, the 2026 update and photo alt text in `content.json`; homepage structure in `home_v2.py`; shared pages in `build.py`; and styles/interactions in `dist/styles.css`, `dist/motion.css`, `dist/scale.css` (numbers band, partners, photo mosaic, programme extras, 2026 page), `dist/app.js` and `dist/motion.js`. Re-run both build commands after changes.
 
 ## Included
 
