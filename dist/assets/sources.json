@@ -106,5 +106,59 @@
     "note": "Primary-school football group and coaches, with small embedded BDO/Proteus logos.",
     "optimized_file": "holiday.webp",
     "optimized_bytes": 417818
+  },
+  {
+    "name": "team-oliver",
+    "source": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/045d1ee0-ad3a-4242-ba9d-45c70946a443/IMG_3578.JPG",
+    "bytes": 14384,
+    "file": "team-oliver.webp",
+    "width": 480,
+    "height": 600,
+    "note": "Team portrait from the Proteus About page (Meet the team), cropped to 4:5 and converted to WebP."
+  },
+  {
+    "name": "team-paddy",
+    "source": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/0e5e27a9-9e8e-4479-8575-815efeb60965/tempImagevESvEe.jpg",
+    "bytes": 18334,
+    "file": "team-paddy.webp",
+    "width": 480,
+    "height": 600,
+    "note": "Team portrait from the Proteus About page (Meet the team), cropped to 4:5 and converted to WebP."
+  },
+  {
+    "name": "team-josh",
+    "source": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/732f0a86-4e74-4954-873f-e468499c4d9e/IMG_3809.jpg",
+    "bytes": 44582,
+    "file": "team-josh.webp",
+    "width": 480,
+    "height": 600,
+    "note": "Team portrait from the Proteus About page (Meet the team), cropped to 4:5 and converted to WebP."
+  },
+  {
+    "name": "team-isaac",
+    "source": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/8bd05a46-d46a-4a2e-b4bc-feef374d2103/IMG_4038.jpg",
+    "bytes": 42952,
+    "file": "team-isaac.webp",
+    "width": 480,
+    "height": 600,
+    "note": "Team portrait from the Proteus About page (Meet the team), cropped to 4:5 and converted to WebP."
+  },
+  {
+    "name": "team-sarah",
+    "source": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/5ddc0473-eaab-45b6-807f-fc54bd88347e/Sarah-headshot.PNG",
+    "bytes": 19776,
+    "file": "team-sarah.webp",
+    "width": 480,
+    "height": 600,
+    "note": "Team portrait from the Proteus About page (Meet the team), cropped to 4:5 and converted to WebP."
+  },
+  {
+    "name": "dynasty-logo",
+    "source": "https://images.squarespace-cdn.com/content/v1/68422b3264cc414771f2daa1/98ce3099-4338-43b0-9495-60fc8306d985/Dynasty_Logo_-_Black_2_31ec4c41-0763-4a68-a16c-181ee49ea992+copy.png",
+    "bytes": 15948,
+    "file": "dynasty-logo.webp",
+    "width": 600,
+    "height": 329,
+    "note": "Dynasty Sport apparel-partner logo from the Proteus homepage, transparent background."
   }
 ]

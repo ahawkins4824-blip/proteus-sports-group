@@ -37,6 +37,11 @@
   "images": {
     "pa-camp-squad": "A large group of young players in coloured training bibs with Proteus coaches in front of a goal",
     "pa-club-squad": "A full squad of young footballers lined up in front of a goal with their coach",
+    "team-oliver": "Oliver Hawkins, Owner, Director and Co-founder of Proteus Sports Group",
+    "team-paddy": "Paddy Rousse, Operations Manager, on a football field",
+    "team-josh": "Josh McTurk, Head of Pre-Schools and Lead Coach, beside a football goal",
+    "team-isaac": "Isaac Rockell, Lead Basketball and Business Development Manager, holding a basketball",
+    "team-sarah": "Sarah Wojtas, Accounts and Administration",
     "pa-coach-talk": "A Proteus coach giving feedback to two players in training bibs",
     "pa-one-to-one": "A coach working one-on-one with a young player on a sunny field",
     "pa-strike": "A Proteus coach demonstrating a strike at a busy training session",
@@ -292,29 +297,34 @@
   "team": [
     {
       "name": "Oliver Hawkins",
+      "photo": "team-oliver",
       "role": "Owner, Director & Co-founder",
       "text": "Co-founded Proteus in 2018 and leads our football operations. An OFC A Licence coach, he is Director of Football at Halswell United AFC, overseeing its academy and first team, and Head Coach of the Christ’s College First XI.",
       "email": "oliver@proteus.nz"
     },
     {
       "name": "Paddy Rousse",
+      "photo": "team-paddy",
       "role": "Operations Manager",
       "text": "Manages our coaches and day-to-day operations, from delivery and logistics to quality control, with a hands-on role on the pitch.",
       "email": "patrick@proteus.nz"
     },
     {
       "name": "Josh McTurk",
+      "photo": "team-josh",
       "role": "Head of Pre-Schools & Lead Coach",
       "text": "Leads our preschool programme, bringing his Oceania C Licence and Bachelor of Sport Coaching studies to children’s first experiences of sport."
     },
     {
       "name": "Isaac Rockell",
+      "photo": "team-isaac",
       "role": "Lead Basketball & Business Development Manager",
       "text": "Leads basketball coaching for schools and recruitment for basketball and new codes, after starting with Proteus as a University of Canterbury intern.",
       "email": "isaac@proteus.nz"
     },
     {
       "name": "Sarah Wojtas",
+      "photo": "team-sarah",
       "role": "Accounts & Administration",
       "text": "Joined in 2026 to manage accounts, HR and onboarding, keeping things running smoothly behind the scenes for our growing team.",
       "email": "info@proteus.nz"

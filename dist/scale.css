@@ -283,3 +283,31 @@
   .football-core-list{padding:24px 20px}
   .football-core-facts{gap:28px}
 }
+
+/* Team photos & apparel partner (2026-11-15) */
+@media(min-width:1151px){#team .team-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}#team .team-person{padding:20px 18px 24px}#team .team-person h3{font-size:21px}}
+.team-person .person-photo{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;margin-bottom:26px;background:#ded9e4}
+.partner-strip{background:var(--paper);padding:0 0 60px}
+.partner-strip>.container{display:grid;grid-template-columns:1fr auto;gap:50px;align-items:center;border-top:1px solid var(--line);padding-top:40px}
+.partner-strip h2{font-size:40px;line-height:1.02;margin:14px 0 14px;color:var(--purple)}
+.partner-strip-copy p{font-size:13px;color:var(--muted);max-width:520px;margin:0}
+.partner-strip a.partner-strip-logo{display:flex;flex-direction:column;align-items:center;gap:16px;font-size:11px;font-weight:750;letter-spacing:0;color:var(--purple)}
+.partner-strip a.partner-strip-logo>img{width:220px;height:auto;display:block;transition:transform .35s ease}
+.partner-strip a.partner-strip-logo:hover>img{transform:scale(1.04)}
+.partner-strip a.partner-strip-logo>span{font-size:11px;margin-left:0;display:inline-flex;align-items:center;gap:12px;border-bottom:1px solid #c9bdd6;padding-bottom:4px}
+.footer-partner{display:grid;grid-template-columns:200px 1fr;gap:30px;align-items:center;padding:22px 0;border-top:1px solid #d7d2da}
+.footer-partner a{justify-self:start}
+.footer-partner img{width:110px;height:auto;display:block}
+@media(max-width:900px){
+  .partner-strip>.container{grid-template-columns:1fr;gap:30px}
+  .partner-strip a.partner-strip-logo{align-items:flex-start}
+  .footer-partner{grid-template-columns:1fr;gap:12px}
+}
+@media(max-width:600px){
+  .partner-strip{padding-bottom:45px}
+  .partner-strip>.container{padding-top:30px}
+  .partner-strip h2{font-size:30px}
+  .partner-strip-copy p{font-size:11px;line-height:1.9}
+  .partner-strip a.partner-strip-logo>img{width:170px}
+  .team-person .person-photo{margin-bottom:18px}
+}
