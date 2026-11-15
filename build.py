@@ -14,7 +14,7 @@ DATA = json.loads((ROOT / 'content.json').read_text(encoding='utf-8'))
 ORIGIN = 'https://ahawkins4824-blip.github.io/proteus-sports-group'
 # Enquiry form delivery. Paste the Web3Forms access key for info@proteus.nz here to make the
 # contact form send messages directly. While it is empty the form prepares an email draft instead.
-FORM_ACCESS_KEY = ''
+FORM_ACCESS_KEY = 'd6115811-c350-4bc1-8473-218a087583c3'
 MANIFEST_PATH = OUT / 'assets' / 'image-manifest.json'
 MANIFEST = json.loads(MANIFEST_PATH.read_text(encoding='utf-8')) if MANIFEST_PATH.exists() else {}
 SIZES = {'half':'(max-width:900px) 100vw, 50vw', 'full':'100vw', 'card':'(max-width:600px) 50vw, 33vw', 'small':'(max-width:600px) 50vw, 25vw', 'rail':'(max-width:600px) 80vw, 25vw'}
