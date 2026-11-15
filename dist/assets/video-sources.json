@@ -17,7 +17,8 @@
         "scaled",
         "25 fps",
         "H.264 compression",
-        "all audio removed"
+        "all audio removed",
+        "re-encoded 2026-11-15 at CRF 31 to reduce download size"
       ],
       "recommended_object_position": "50% 60%",
       "source_segments_seconds": [
@@ -45,7 +46,7 @@
       ],
       "edits": [
         "introductory talking-head interview removed",
-        "trimmed to source 11.5\u201368 seconds",
+        "trimmed to source 11.5–68 seconds",
         "25 fps",
         "H.264 compression",
         "all audio removed"

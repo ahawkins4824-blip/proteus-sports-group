@@ -1,0 +1,368 @@
+{
+ "academy-2027": {
+  "width": 1080,
+  "height": 1350,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "action-1": {
+  "width": 1080,
+  "height": 810,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "action-2": {
+  "width": 1080,
+  "height": 810,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "action-3": {
+  "width": 1080,
+  "height": 810,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "beach": {
+  "width": 1400,
+  "height": 1306,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "coaches": {
+  "width": 1080,
+  "height": 1080,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "community": {
+  "width": 1284,
+  "height": 920,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "development": {
+  "width": 1400,
+  "height": 1050,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "dynasty-logo": {
+  "width": 600,
+  "height": 329,
+  "variants": [
+   480
+  ]
+ },
+ "early-years": {
+  "width": 1400,
+  "height": 933,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "holiday": {
+  "width": 1400,
+  "height": 1050,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "ig-claudia-alex": {
+  "width": 750,
+  "height": 750,
+  "variants": [
+   480
+  ]
+ },
+ "ig-hiring": {
+  "width": 750,
+  "height": 999,
+  "variants": [
+   480
+  ]
+ },
+ "ig-team-day": {
+  "width": 750,
+  "height": 1000,
+  "variants": [
+   480
+  ]
+ },
+ "ig-tom-caleb": {
+  "width": 750,
+  "height": 750,
+  "variants": [
+   480
+  ]
+ },
+ "individual-coaching": {
+  "width": 1320,
+  "height": 880,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "motion-poster": {
+  "width": 720,
+  "height": 1280,
+  "variants": []
+ },
+ "pa-academy-huddle": {
+  "width": 1320,
+  "height": 1116,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-beach": {
+  "width": 1284,
+  "height": 961,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-boots": {
+  "width": 1284,
+  "height": 982,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-camp-squad": {
+  "width": 1400,
+  "height": 1050,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-club-squad": {
+  "width": 1050,
+  "height": 1400,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-coach-talk": {
+  "width": 1121,
+  "height": 1400,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-coaches-night": {
+  "width": 1400,
+  "height": 1050,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-coaches-stadium": {
+  "width": 1050,
+  "height": 1400,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-community-group": {
+  "width": 1400,
+  "height": 788,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-first-team": {
+  "width": 970,
+  "height": 943,
+  "variants": [
+   480
+  ]
+ },
+ "pa-floodlights": {
+  "width": 1050,
+  "height": 1400,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-holiday-coach": {
+  "width": 1400,
+  "height": 934,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-holiday-hug": {
+  "width": 1400,
+  "height": 1400,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-holiday-play": {
+  "width": 1400,
+  "height": 932,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-one-to-one": {
+  "width": 1284,
+  "height": 874,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-park-session": {
+  "width": 1400,
+  "height": 1050,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-preschool-ladder": {
+  "width": 1400,
+  "height": 1400,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-preschool": {
+  "width": 1400,
+  "height": 1400,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-school-celebrate": {
+  "width": 937,
+  "height": 1400,
+  "variants": [
+   480
+  ]
+ },
+ "pa-school-court": {
+  "width": 1050,
+  "height": 1400,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-school-team": {
+  "width": 846,
+  "height": 864,
+  "variants": [
+   480
+  ]
+ },
+ "pa-school-turf": {
+  "width": 1400,
+  "height": 1053,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-strike": {
+  "width": 1050,
+  "height": 1400,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "pa-workshop": {
+  "width": 1284,
+  "height": 965,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "school": {
+  "width": 1284,
+  "height": 942,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "team-isaac": {
+  "width": 480,
+  "height": 600,
+  "variants": []
+ },
+ "team-josh": {
+  "width": 480,
+  "height": 600,
+  "variants": []
+ },
+ "team-oliver": {
+  "width": 480,
+  "height": 600,
+  "variants": []
+ },
+ "team-paddy": {
+  "width": 480,
+  "height": 600,
+  "variants": []
+ },
+ "team-sarah": {
+  "width": 480,
+  "height": 600,
+  "variants": []
+ },
+ "team": {
+  "width": 1400,
+  "height": 933,
+  "variants": [
+   480,
+   800
+  ]
+ },
+ "training": {
+  "width": 1350,
+  "height": 1688,
+  "variants": [
+   480,
+   800
+  ]
+ }
+}

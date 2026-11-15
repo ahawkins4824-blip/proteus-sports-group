@@ -105,13 +105,36 @@
 
     const valueOf = (name) => String(form.elements.namedItem(name)?.value || '').trim();
 
-    form.addEventListener('submit', (event) => {
+    const accessKey = form.dataset.accessKey || '';
+    const statusLine = document.getElementById('enquiry-status');
+    const sentPanel = document.getElementById('enquiry-sent');
+    const fallbackNote = document.getElementById('enquiry-fallback-note');
+    const submitButton = form.querySelector('[type="submit"]');
+    const reducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Shows the prepared message with an "open in your email app" link. Used when direct
+    // sending is not switched on, and as the fallback if sending fails.
+    const showDraft = (subject, message, afterFailure) => {
+      const recipient = 'info@proteus.nz';
+      summary.value = message;
+      emailLink.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+      if (fallbackNote) fallbackNote.hidden = !afterFailure;
+      preview.hidden = false;
+      if (copyStatus) copyStatus.textContent = '';
+      const heading = preview.querySelector('h2, h3, [data-preview-heading]');
+      if (heading) {
+        heading.setAttribute('tabindex', '-1');
+        heading.focus({ preventScroll: true });
+      }
+      preview.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'nearest' });
+    };
+
+    form.addEventListener('submit', async (event) => {
       event.preventDefault();
       if (!form.reportValidity() || !summary || !preview || !emailLink) return;
 
       const selectedInterest = interest?.selectedOptions?.[0]?.textContent.trim() || valueOf('interest');
       const topic = selectedInterest || 'General enquiry';
-      const recipient = 'info@proteus.nz';
       const subject = `Website enquiry — ${topic}`;
       const message = [
         'Kia ora Proteus team,',
@@ -123,16 +146,50 @@
         `Email: ${valueOf('email')}`,
       ].join('\n');
 
-      summary.value = message;
-      emailLink.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-      preview.hidden = false;
-      if (copyStatus) copyStatus.textContent = '';
-      const heading = preview.querySelector('h2, h3, [data-preview-heading]');
-      if (heading) {
-        heading.setAttribute('tabindex', '-1');
-        heading.focus({ preventScroll: true });
+      if (!accessKey) {
+        showDraft(subject, message, false);
+        return;
       }
-      preview.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'nearest' });
+      if (form.elements.namedItem('botcheck')?.checked) return;
+
+      const controller = new AbortController();
+      const timer = window.setTimeout(() => controller.abort(), 15000);
+      if (submitButton) submitButton.disabled = true;
+      if (statusLine) statusLine.textContent = 'Sending your enquiry…';
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          signal: controller.signal,
+          body: JSON.stringify({
+            access_key: accessKey,
+            subject,
+            from_name: 'Proteus website',
+            name: valueOf('name'),
+            email: valueOf('email'),
+            replyto: valueOf('email'),
+            interest: topic,
+            message: valueOf('message'),
+            botcheck: '',
+          }),
+        });
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok || !result.success) throw new Error('Enquiry was not accepted');
+        if (statusLine) statusLine.textContent = '';
+        preview.hidden = true;
+        form.hidden = true;
+        if (sentPanel) {
+          sentPanel.hidden = false;
+          sentPanel.querySelector('h3')?.focus({ preventScroll: true });
+          sentPanel.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'nearest' });
+        }
+      } catch {
+        if (statusLine) statusLine.textContent = '';
+        showDraft(subject, message, true);
+      } finally {
+        window.clearTimeout(timer);
+        if (submitButton) submitButton.disabled = false;
+      }
     });
 
     copyButton?.addEventListener('click', async () => {

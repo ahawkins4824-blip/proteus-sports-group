@@ -37,7 +37,9 @@
       return rect.height > 0 && rect.width > 0 && rect.bottom > 0 && rect.top < window.innerHeight;
     };
 
-    const canPlayHero = () => Boolean(heroVideo && heroVisible && !heroPaused &&
+    // Visitors who have asked their device to save data keep the still poster instead of the video.
+    const saveData = Boolean(navigator.connection && navigator.connection.saveData);
+    const canPlayHero = () => Boolean(heroVideo && heroVisible && !heroPaused && !saveData &&
       !motionPaused() && !document.hidden && !filmDialog?.open);
 
     const syncHeroVideo = () => {

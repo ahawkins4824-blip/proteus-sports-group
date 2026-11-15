@@ -46,6 +46,16 @@ def prefix_url(value: str, base_path: str) -> str:
     return value if under_base(boundary, base_path) else base_path + value
 
 
+def rewrite_srcset(value: str, base_path: str) -> str:
+    candidates = []
+    for candidate in value.split(","):
+        parts = candidate.split()
+        if parts:
+            parts[0] = prefix_url(parts[0], base_path)
+            candidates.append(" ".join(parts))
+    return ", ".join(candidates)
+
+
 def refresh_url(content: str) -> str | None:
     match = re.search(r"\burl\s*=\s*(.*)$", content, re.IGNORECASE)
     if not match:
@@ -90,6 +100,8 @@ class HTMLRewriter(HTMLParser):
             value = match.group("value")
             if name in URL_ATTRIBUTES:
                 value = prefix_url(value, self.base_path)
+            elif name == "srcset":
+                value = rewrite_srcset(value, self.base_path)
             elif name == "content" and is_refresh:
                 value = rewrite_refresh(value, self.base_path)
             return match.group("name") + match.group("equals") + match.group("quote") + value + match.group("quote")
@@ -139,6 +151,11 @@ def rewrite_robots(source: str, base_path: str, site_url: str) -> str:
     return "\n".join(lines) + "\n"
 
 
+def srcset_urls(value: str) -> list[str]:
+    """The URL of each comma-separated srcset candidate ("/a.webp 480w, /b.webp 800w")."""
+    return [candidate.split()[0] for candidate in value.split(",") if candidate.strip()]
+
+
 class HTMLInventory(HTMLParser):
     def __init__(self):
         super().__init__()
@@ -150,6 +167,9 @@ class HTMLInventory(HTMLParser):
         if values.get("id"):
             self.ids.add(values["id"])
         self.references.extend(value for name, value in attrs if name in URL_ATTRIBUTES and value)
+        for name, value in attrs:
+            if name == "srcset" and value:
+                self.references.extend(srcset_urls(value))
         if tag == "meta" and values.get("http-equiv", "").lower() == "refresh":
             target = refresh_url(values.get("content", ""))
             if target:
