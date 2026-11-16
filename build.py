@@ -11,7 +11,7 @@ from icons import icon
 ROOT = Path(__file__).parent
 OUT = ROOT / 'dist'
 DATA = json.loads((ROOT / 'content.json').read_text(encoding='utf-8'))
-ORIGIN = 'https://ahawkins4824-blip.github.io/proteus-sports-group'
+ORIGIN = 'https://www.proteus.nz'
 # Enquiry form delivery. Paste the Web3Forms access key for info@proteus.nz here to make the
 # contact form send messages directly. While it is empty the form prepares an email draft instead.
 FORM_ACCESS_KEY = 'd6115811-c350-4bc1-8473-218a087583c3'
